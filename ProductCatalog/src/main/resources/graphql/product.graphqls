@@ -1,0 +1,11 @@
+type Product {
+    id: String!
+    name: String!
+    imageUrls: [String!]
+    description: String
+    tags: [String!]
+}
+
+type Query {
+    searchByIds(ids: [String]!): [Product]!
+}
