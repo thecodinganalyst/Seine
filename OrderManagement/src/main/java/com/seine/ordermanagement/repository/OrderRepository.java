@@ -1,2 +1,10 @@
-package com.seine.ordermanagement.repository;public class OrderRepository {
+package com.seine.ordermanagement.repository;
+
+import com.seine.ordermanagement.model.Order;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface OrderRepository extends MongoRepository<Order, String> {
+
 }

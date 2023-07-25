@@ -1,2 +1,9 @@
-package com.seine.ordermanagement.model;public enum OrderStatus {
+package com.seine.ordermanagement.model;
+
+public enum OrderStatus {
+    Created,
+    Processed,
+    Shipped,
+    Delivered,
+    Cancelled
 }
