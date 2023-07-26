@@ -48,6 +48,10 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+bootRun {
+    systemProperty "spring.profiles.active", "dev"
+}
+
 test {
     systemProperty "spring.profiles.active", "test"
     finalizedBy jacocoTestReport // report is always generated after tests run
